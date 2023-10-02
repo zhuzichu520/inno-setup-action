@@ -1,0 +1,15 @@
+name: '@zhuzichu520/inno-setup-action'
+description: This action generate setup/installer files using Inno Setup
+
+author: '@zhuzichu520'
+
+inputs:
+  filepath:
+    description: 'Path for ISS file'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - run: ${{ github.action_path }}\src\ISCC.exe ${{inputs.filepath}}
+      shell: cmd
