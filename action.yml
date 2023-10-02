@@ -1,4 +1,4 @@
-name: '@zhuzichu520/inno-setup-action'
+name: '@zhuzichu520/inno-setup-action-cli'
 description: This action generate setup/installer files using Inno Setup
 
 author: '@zhuzichu520'
